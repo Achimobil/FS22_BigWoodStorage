@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="$data/maps/mapAlpine/textures/props/containerSmallDecals_diffuse.png"/>
+    <File fileId="10" filename="$data/maps/mapAlpine/textures/props/containerSmall_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapAlpine/textures/props/containerSmall_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapAlpine/textures/props/containerSmall_specular.png"/>
+    <File fileId="1" filename="$data/maps/mapAlpine/textures/props/toilet_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapAlpine/textures/props/toilet_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapAlpine/textures/props/toilet_specular.png"/>
+    <File fileId="18" filename="$data/maps/mapUS/textures/props/waterStep01_diffuse.png"/>
+    <File fileId="19" filename="$data/maps/mapUS/textures/props/waterStep01_normal.png"/>
+    <File fileId="20" filename="$data/maps/mapUS/textures/props/waterStep01_specular.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/props/boardStackSet_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/props/boardStackSet_normal.png"/>
+    <File fileId="17" filename="$data/maps/textures/shared/props/boardStackSet_specular.png"/>
+    <File fileId="6" filename="$data/maps/textures/shared/props/wheelbarrowOld_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/wheelbarrowOld_normal.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/props/wheelbarrowOld_specular.png"/>
+    <File fileId="21" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="22" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="23" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="14" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="boardStackSet_mat" materialId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="containerSmall_mat" materialId="7">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="containerSmallDecals_mat" materialId="8" alphaBlending="true">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="toilet_mat" materialId="11" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="12" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="13">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+    </Material>
+    <Material name="waterStep01_mat" materialId="14" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="wheelbarrowOld_mat" materialId="15">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="woodStorage.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="woodStorage" nodeId="38">
+        <TransformGroup name="visuals" nodeId="39">
+          <Shape shapeId="1" name="toileVis" lockedgroup="true" translation="-1.665 -2.03579e-07 -0.331287" rotation="180 -1.86693e-05 180" clipDistance="90" nodeId="116" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="wheelbarrowNew" lockedgroup="true" translation="1.812 0 -2.17269" rotation="-180 -16.7664 -180" clipDistance="40" nodeId="114" materialIds="15" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="col" translation="-7.62939e-08 0.395154 -0.316281" visibility="false" static="true" density="0.0001" nodeId="115" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="4" name="containerSmallVis" lockedgroup="true" clipDistance="110" nodeId="119" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="decals" clipDistance="30" nodeId="120" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="6" name="barBeamShort" lockedgroup="true" translation="-0.173737 0.973198 -0.377884" rotation="180 -83.8421 -180" clipDistance="30" nodeId="121" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="7" name="col" visibility="false" static="true" density="0.0001" nodeId="122" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="fillPlanes" nodeId="40">
+          <TransformGroup name="plane1" translation="0 0 7.48362" nodeId="133">
+            <Shape shapeId="8" name="woodenTrunkPile01snow" lockedgroup="true" translation="0 0 0.2" static="true" nodeId="134" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="9" name="woodenTrunkPile01snow_vis" clipDistance="200" nodeId="135" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="8" name="woodenTrunkPile01snow" lockedgroup="true" translation="0 0 1.1" static="true" nodeId="142" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="9" name="woodenTrunkPile01snow_vis" clipDistance="200" nodeId="143" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.395 0.37 0.79" rotation="0 -2.00003 0" clipDistance="200" nodeId="144" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39989 0.62 0.650085" rotation="0 -2.00003 0" clipDistance="200" nodeId="145" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.62 0.94" rotation="0 -2.00003 0" clipDistance="200" nodeId="146" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.395 0.872389 0.79" rotation="0 -2.00003 0" clipDistance="200" nodeId="150" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39989 0.840722 0.471959" rotation="0 -2.00003 0" clipDistance="200" nodeId="151" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.841603 1.12914" rotation="0 -2.00003 0" clipDistance="200" nodeId="152" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.62 0.94" rotation="0 -2.00003 0" clipDistance="200" nodeId="153" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.08391 0.979138" rotation="0 -2.00003 0" clipDistance="200" nodeId="154" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.09447 0.615922" rotation="0 -2.00003 0" clipDistance="200" nodeId="155" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39 1.30325 0.800184" rotation="0 -2.00003 0" clipDistance="200" nodeId="156" materialIds="14" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane2" translation="3.5 0 -2.5" rotation="0 90 0" nodeId="157">
+            <Shape shapeId="8" name="woodenTrunkPile01snow" lockedgroup="true" translation="0 0 0.2" static="true" nodeId="158" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="9" name="woodenTrunkPile01snow_vis" clipDistance="200" nodeId="159" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="8" name="woodenTrunkPile01snow" lockedgroup="true" translation="0 0 1.1" static="true" nodeId="160" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="9" name="woodenTrunkPile01snow_vis" clipDistance="200" nodeId="161" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.395 0.37 0.79" rotation="0 -2.00003 0" clipDistance="200" nodeId="162" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39989 0.62 0.650085" rotation="0 -2.00003 0" clipDistance="200" nodeId="163" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.62 0.94" rotation="0 -2.00003 0" clipDistance="200" nodeId="164" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.395 0.872389 0.79" rotation="0 -2.00003 0" clipDistance="200" nodeId="165" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39989 0.840722 0.471959" rotation="0 -2.00003 0" clipDistance="200" nodeId="166" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.841603 1.12914" rotation="0 -2.00003 0" clipDistance="200" nodeId="167" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.62 0.94" rotation="0 -2.00003 0" clipDistance="200" nodeId="168" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.08391 0.979138" rotation="0 -2.00003 0" clipDistance="200" nodeId="169" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39 1.09447 0.615922" rotation="0 -2.00003 0" clipDistance="200" nodeId="170" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.30325 0.800184" rotation="0 -2.00003 0" clipDistance="200" nodeId="171" materialIds="14" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane3" translation="-5 0 -2.5" rotation="0 90 0" nodeId="172">
+            <Shape shapeId="8" name="woodenTrunkPile01snow" lockedgroup="true" translation="0 0 0.2" static="true" nodeId="173" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="9" name="woodenTrunkPile01snow_vis" clipDistance="200" nodeId="174" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="8" name="woodenTrunkPile01snow" lockedgroup="true" translation="0 0 1.1" static="true" nodeId="175" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="9" name="woodenTrunkPile01snow_vis" clipDistance="200" nodeId="176" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.395 0.37 0.79" rotation="0 -2.00003 0" clipDistance="200" nodeId="177" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39989 0.62 0.650085" rotation="0 -2.00003 0" clipDistance="200" nodeId="178" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.62 0.94" rotation="0 -2.00003 0" clipDistance="200" nodeId="179" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.395 0.872389 0.79" rotation="0 -2.00003 0" clipDistance="200" nodeId="180" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.39989 0.840722 0.471959" rotation="0 -2.00003 0" clipDistance="200" nodeId="181" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.841603 1.12914" rotation="0 -2.00003 0" clipDistance="200" nodeId="182" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 0.62 0.94" rotation="0 -2.00003 0" clipDistance="200" nodeId="183" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.08391 0.979138" rotation="0 -2.00003 0" clipDistance="200" nodeId="184" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.09447 0.615922" rotation="0 -2.00003 0" clipDistance="200" nodeId="185" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="woodenTrunk01snow_vis" translation="4.38977 1.30325 0.800184" rotation="0 -2.00003 0" clipDistance="200" nodeId="186" materialIds="14" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" translation="6 0 -8" nodeId="41">
+          <TransformGroup name="clearArea1Start" nodeId="42">
+            <TransformGroup name="clearArea1Width" translation="-12 0 0" nodeId="43"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 18" nodeId="44"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" translation="-6 0 -8" nodeId="45">
+          <TransformGroup name="levelArea1Start" nodeId="46">
+            <TransformGroup name="levelArea1Width" translation="12 0 0" nodeId="47"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 18" nodeId="48"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-4 0 5" rotation="1.98546e-09 0 0" nodeId="55">
+          <TransformGroup name="palletStripes" nodeId="56">
+            <Shape shapeId="11" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="57" materialIds="13" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="11" name="warningStripesCorner" translation="1.96718e-07 0 2" rotation="0 90 0" clipDistance="200" nodeId="58" materialIds="13" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="11" name="warningStripesCorner" translation="9 7.51326e-06 2" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="59" materialIds="13" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="11" name="warningStripesCorner" translation="0 0 2" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="60" materialIds="13" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="palletSpawnerRight" translation="0 0.3 1" nodeId="61">
+            <TransformGroup name="palletSpawnerRight1start" nodeId="62">
+              <TransformGroup name="palletSpawnerRight1end" translation="9 0 0" nodeId="63"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerRight2start" translation="0 1.25 0" nodeId="64">
+              <TransformGroup name="palletSpawnerRight2end" translation="9 0 0" nodeId="65"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerRight3start" translation="0 2.5 0" nodeId="66">
+              <TransformGroup name="palletSpawnerRight3end" translation="9 0 0" nodeId="67"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="playerTrigger" nodeId="75">
+          <Shape shapeId="12" name="palletMenuTrigger" translation="2 1 1" scale="2 2 2" static="true" trigger="true" collisionMask="1048576" nodeId="76" materialIds="12" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="12" name="infoTrigger" translation="0 1 1" scale="12 2 18" static="true" trigger="true" collisionMask="1048576" nodeId="77" materialIds="12" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="triggerMarker" translation="2 0 1" nodeId="78"/>
+        </TransformGroup>
+        <TransformGroup name="unloadingStation" translation="0.5 0 3" rotation="0 90 0" nodeId="79">
+          <Shape shapeId="12" name="exactFillRootNode" translation="0 -0.5 0" scale="2 1 9" static="true" trigger="true" collisionMask="1073741824" nodeId="80" materialIds="12" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="markerUnloading" nodeId="82"/>
+          <TransformGroup name="unloadingStripes" translation="8.74228e-08 0 4.5" rotation="0 90 0" nodeId="83">
+            <Shape shapeId="11" name="warningStripesCorner" translation="1.74846e-07 0 -1" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="84" materialIds="13" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="11" name="warningStripesCorner" translation="7.03351e-07 -4.4576e-13 2" rotation="0 90 0" clipDistance="200" nodeId="85" materialIds="13" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="11" name="warningStripesCorner" translation="9 5.64713e-06 1" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="86" materialIds="13" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="11" name="warningStripesCorner" translation="7.86805e-07 5.43934e-14 2" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="87" materialIds="13" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="foliageAreas" nodeId="88">
+          <TransformGroup name="foliageArea1Start" translation="7 0 16" nodeId="89">
+            <TransformGroup name="foliageArea1Width" translation="-1.91369 0 0" nodeId="90"/>
+            <TransformGroup name="foliageArea1Height" translation="0 0 -17.5133" nodeId="91"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" translation="-5 0 0" nodeId="101">
+          <TransformGroup name="indoorArea1Start" nodeId="102">
+            <TransformGroup name="indoorArea1Width" translation="10 0 0" nodeId="103"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 14" nodeId="104"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="-11 0 -7" nodeId="105">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" nodeId="106">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="17 0 22" nodeId="107"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" translation="-11 0 -7" nodeId="108">
+          <TransformGroup name="testArea1Start" nodeId="109">
+            <TransformGroup name="testArea1End" translation="16 7 22" nodeId="110"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <Light name="light" rotation="-40 0 -30" nodeId="130" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" shadowPerspective="false" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" range="500"/>
+  </Scene>
+
+</i3D>
