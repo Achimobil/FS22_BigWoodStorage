@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="65">
+    <author>Achimobil</author>
+    <version>0.1.0.0</version>
+    <title>
+        <en>Wood Storage</en>
+    </title>
+    <description>
+        <en>
+            <![CDATA[Wood Storage]]></en>
+        <de>
+            <![CDATA[Wood Storage]]></de>
+        <fr>
+            <![CDATA[Wood Storage]]></fr>
+    </description>
+    <multiplayer supported="true"/>
+    <iconFilename>icon.dds</iconFilename>
+    <storeItems>
+        <storeItem xmlFilename="woodStorage.xml"/>
+    </storeItems>
+    <brands>
+        <brand name="FARMERTOOLS" title="Farmer Tools" image="store/FarmerTools.dds"/>
+    </brands>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/main.lua"/>
+    </extraSourceFiles>
+    <l10n>
+    </l10n>
+    <placeableTypes>
+        <type name="SiloWithPallet" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="aPalletSilo"/>
+            <specialization name="siloObjectFillLevelSpezialisation"/>
+            <specialization name="siloDisplaySpezialisation"/>
+        </type>
+    </placeableTypes>
+</modDesc>

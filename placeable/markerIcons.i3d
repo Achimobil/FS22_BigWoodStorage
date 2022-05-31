@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="markerIcons" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="1" filename="textures/HoT_Marker.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="markerIcons_mat" materialId="4" alphaBlending="true" customShaderId="2" customShaderVariation="additive_billboard_pulsating">
+      <Emissivemap fileId="1"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+      <CustomParameter name="pulseSpeed" value="3 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="markerIcons.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="markerIcons" nodeId="14">
+        <TransformGroup name="markerIconPallet" visibility="false" nodeId="15">
+          <Shape shapeId="1" name="iconUnload" translation="0 1 0" clipDistance="300" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight2" translation="0 1 0" clipDistance="100" nodeId="17" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconManure" visibility="false" nodeId="18">
+          <Shape shapeId="2" name="iconWrench" translation="0 1 0" clipDistance="300" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight3" translation="0 1 0" clipDistance="100" nodeId="20" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconWater" visibility="false" nodeId="21">
+          <Shape shapeId="3" name="iconWater" translation="0 1 0" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight4" translation="0 1 0" clipDistance="100" nodeId="23" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconAnimals" visibility="false" nodeId="24">
+          <Shape shapeId="4" name="iconAnimals" translation="0 1 0" clipDistance="300" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight5" translation="0 1 0" clipDistance="100" nodeId="26" type="point" color="0.247 0.113 0.9" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconBale" nodeId="27">
+          <Shape shapeId="5" name="iconExclamationMark" translation="0 1 0" clipDistance="300" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight6" translation="0 1 0" clipDistance="100" nodeId="29" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconShopping" visibility="false" nodeId="30">
+          <Shape shapeId="6" name="iconShopping" translation="0 1 0" clipDistance="300" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight7" translation="0 1 0" clipDistance="100" nodeId="32" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconwork" nodeId="33">
+          <Shape shapeId="7" name="iconLoad" translation="0 1 0" clipDistance="300" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight8" translation="0 1 0" clipDistance="100" nodeId="35" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconQuestionMark" visibility="false" nodeId="36">
+          <Shape shapeId="8" name="iconQuestionMark" translation="0 1 0" clipDistance="300" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Light name="pointLight1" translation="0 1 0" clipDistance="100" nodeId="38" type="point" color="0.247 0.113 0" emitDiffuse="true" emitSpecular="true" range="2.5"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

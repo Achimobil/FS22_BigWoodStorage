@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<markerIcons>
+    <filename>placeable/markerIcons.i3d</filename>
+    <variations>
+        <variation node="0|0" id="PALLET" />
+        <variation node="0|1" id="MANURE" />
+        <variation node="0|2" id="WATER" />
+        <variation node="0|3" id="ANIMALS" />
+        <variation node="0|4" id="BALE" />
+        <variation node="0|5" id="BASKET" />
+        <variation node="0|6" id="WORK" />
+        <variation node="0|7" id="WORK" />
+    </variations>
+</markerIcons>
