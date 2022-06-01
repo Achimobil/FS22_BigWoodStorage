@@ -31,6 +31,9 @@
                 <spawnPlace startNode="palletSpawnerRight1start"/>
                 <spawnPlace startNode="palletSpawnerRight2start"/>
                 <spawnPlace startNode="palletSpawnerRight3start"/>
+                <spawnPlace startNode="palletSpawnerLeft1start"/>
+                <spawnPlace startNode="palletSpawnerLeft2start"/>
+                <spawnPlace startNode="palletSpawnerLeft3start"/>
             </spawnPlaces>
         </palletSpawner>
     </aPalletSilo>
@@ -90,12 +93,12 @@
         </unloadingStation>
                 
         <storages>
-            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="40000">
+            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="400000">
             </storage>
         </storages>
             
         <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
-            <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="40000"/>
+            <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="400000"/>
         </siloObjectFillLevels>
         
         <SiloDisplays>
@@ -125,6 +128,9 @@
         <i3dMapping id="palletSpawnerRight1start" node="0>4|1|0"/>
         <i3dMapping id="palletSpawnerRight2start" node="0>4|1|1"/>
         <i3dMapping id="palletSpawnerRight3start" node="0>4|1|2"/>
+        <i3dMapping id="palletSpawnerLeft1start" node="0>4|2|0"/>
+        <i3dMapping id="palletSpawnerLeft2start" node="0>4|2|1"/>
+        <i3dMapping id="palletSpawnerLeft3start" node="0>4|2|2"/>
         <i3dMapping id="palletMenuTrigger" node="0>5|0"/>
         <i3dMapping id="infoTrigger" node="0>5|1"/>
         <i3dMapping id="triggerMarker" node="0>5|2"/>

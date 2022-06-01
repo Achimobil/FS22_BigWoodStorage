@@ -6,8 +6,8 @@
   </Asset>
 
   <Files>
-    <File fileId="23" filename="textures/excavator_hi.dds"/>
-    <File fileId="22" filename="textures/glass_ex.dds"/>
+    <File fileId="16" filename="textures/excavator_hi.dds"/>
+    <File fileId="15" filename="textures/glass_ex.dds"/>
     <File fileId="13" filename="$data/maps/mapAlpine/textures/props/containerSmallDecals_diffuse.png"/>
     <File fileId="10" filename="$data/maps/mapAlpine/textures/props/containerSmall_diffuse.png"/>
     <File fileId="11" filename="$data/maps/mapAlpine/textures/props/containerSmall_normal.png"/>
@@ -15,18 +15,18 @@
     <File fileId="1" filename="$data/maps/mapAlpine/textures/props/toilet_diffuse.png"/>
     <File fileId="2" filename="$data/maps/mapAlpine/textures/props/toilet_normal.png"/>
     <File fileId="3" filename="$data/maps/mapAlpine/textures/props/toilet_specular.png"/>
-    <File fileId="15" filename="$data/maps/mapUS/textures/props/waterStep01_diffuse.png"/>
-    <File fileId="16" filename="$data/maps/mapUS/textures/props/waterStep01_normal.png"/>
-    <File fileId="17" filename="$data/maps/mapUS/textures/props/waterStep01_specular.png"/>
+    <File fileId="20" filename="$data/maps/mapUS/textures/props/waterStep01_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/mapUS/textures/props/waterStep01_normal.png"/>
+    <File fileId="22" filename="$data/maps/mapUS/textures/props/waterStep01_specular.png"/>
     <File fileId="6" filename="$data/maps/textures/shared/props/wheelbarrowOld_diffuse.png"/>
     <File fileId="7" filename="$data/maps/textures/shared/props/wheelbarrowOld_normal.png"/>
     <File fileId="8" filename="$data/maps/textures/shared/props/wheelbarrowOld_specular.png"/>
-    <File fileId="18" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
-    <File fileId="19" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
-    <File fileId="20" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
-    <File fileId="24" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_diffuse.dds"/>
-    <File fileId="25" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_normal.dds"/>
-    <File fileId="26" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_specular.dds"/>
+    <File fileId="23" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="25" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="17" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_diffuse.dds"/>
+    <File fileId="18" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_normal.dds"/>
+    <File fileId="19" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_specular.dds"/>
     <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
     <File fileId="14" filename="$data/shared/default_normal.png"/>
   </Files>
@@ -34,12 +34,12 @@
 
   <Materials>
     <Material name="bagger" materialId="4">
-      <Texture fileId="23"/>
+      <Texture fileId="16"/>
     </Material>
     <Material name="bunkerSilo_mat" materialId="5">
-      <Texture fileId="24"/>
-      <Normalmap fileId="25"/>
-      <Glossmap fileId="26"/>
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
     </Material>
     <Material name="containerSmall_mat" materialId="6">
       <Texture fileId="10"/>
@@ -51,7 +51,7 @@
       <Normalmap fileId="14"/>
     </Material>
     <Material name="glass" materialId="8" alphaBlending="true">
-      <Texture fileId="22"/>
+      <Texture fileId="15"/>
     </Material>
     <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
@@ -65,14 +65,14 @@
     <Material name="UnnamedMaterial" materialId="11" diffuseColor="1 1 1 1">
     </Material>
     <Material name="warningStripes_mat" materialId="12">
-      <Texture fileId="18"/>
-      <Normalmap fileId="19"/>
-      <Glossmap fileId="20"/>
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
     </Material>
     <Material name="waterStep01_mat" materialId="13" customShaderId="4">
-      <Texture fileId="15"/>
-      <Normalmap fileId="16"/>
-      <Glossmap fileId="17"/>
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
       <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
       <CustomParameter name="snowScale" value="1 0 0 0"/>
     </Material>
@@ -94,83 +94,628 @@
   <Scene>
       <TransformGroup name="woodStorage" nodeId="26">
         <TransformGroup name="visuals" nodeId="27">
-          <Shape shapeId="1" name="toileVis" lockedgroup="true" translation="-1.665 -2.03579e-07 -0.331287" rotation="180 -1.86693e-05 180" static="true" clipDistance="90" nodeId="28" materialIds="10" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="2" name="wheelbarrowNew" lockedgroup="true" translation="1.812 0 -2.17269" rotation="-180 -16.7664 -180" clipDistance="40" nodeId="29" materialIds="14" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="1" name="toileVis" lockedgroup="true" translation="-18.8557 -1.8612e-06 -6.25757" rotation="180 90 180" static="true" clipDistance="90" nodeId="28" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="wheelbarrowNew" lockedgroup="true" translation="15.8069 -1.63249e-06 -1.50313" rotation="-180 -16.766 -180" clipDistance="40" nodeId="29" materialIds="14" castsShadows="true" receiveShadows="true">
             <Shape shapeId="3" name="col" translation="-7.62939e-08 0.395154 -0.316281" visibility="false" static="true" density="0.0001" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </Shape>
-          <Shape shapeId="4" name="containerSmallVis" lockedgroup="true" static="true" clipDistance="110" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="4" name="containerSmallVis" lockedgroup="true" translation="-18.9921 0 -3.42641" rotation="0 90 0" static="true" clipDistance="110" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true">
             <Shape shapeId="5" name="decals" clipDistance="30" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
           </Shape>
+          <Shape shapeId="6" name="kettenbagger_Mesh" translation="0.440878 0 -3.66665" rotation="0 43.7664 0" static="true" clipDistance="1000" nodeId="132" materialIds="8,4" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="wallElements" nodeId="565">
+            <TransformGroup name="wallElement" translation="-8.00289 0 -1.21133" rotation="0 90 0" nodeId="566">
+              <TransformGroup name="wall_small_sidesClose" translation="2 0 0" nodeId="133">
+                <Shape shapeId="7" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="134" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesClose" translation="2 0 3" nodeId="135">
+                <Shape shapeId="7" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="136" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesClose" translation="-2 0 0" nodeId="137">
+                <Shape shapeId="7" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="138" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesClose" translation="-2 0 3" nodeId="139">
+                <Shape shapeId="7" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="140" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
         </TransformGroup>
         <TransformGroup name="fillPlanes" nodeId="33">
-          <TransformGroup name="plane0" translation="4.5 0.14 9.213" nodeId="34">
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="35" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="36" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="37" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="38" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="39" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="40" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="41" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="42" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="43" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="44" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="45" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="46" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="47" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="48" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="49" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="50" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="51" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="52" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="53" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="55" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="56" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="57" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="58" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="59" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="60" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="61" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="62" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="63" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="64" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="65" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="66" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="67" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="68" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="69" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="70" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="71" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="72" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="73" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="74" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="75" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="76" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="77" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="78" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="79" materialIds="13" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="80" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="plane0" translation="4 0.14 20" nodeId="34">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="35" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="36" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="37" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="38" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="39" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="40" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="41" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="42" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="43" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="44" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="45" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="46" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="47" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="48" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="49" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="50" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="51" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="52" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="53" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="55" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="56" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="57" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="58" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="59" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="60" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="61" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="62" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="63" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="64" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="65" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="66" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="67" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="68" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="69" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="70" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="71" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="72" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="73" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="74" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="75" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="76" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="77" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="78" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="79" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="80" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="-14.8817 0.14 20.5119" rotation="0 -45 0" nodeId="142">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="143" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="144" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="145" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="146" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="147" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="148" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="149" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="150" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="151" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="152" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="153" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="154" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="155" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="156" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="157" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="158" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="159" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="160" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="161" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="162" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="163" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="164" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="165" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="166" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="167" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="168" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="169" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="170" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="171" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="172" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="173" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="174" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="175" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="176" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="177" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="178" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="179" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="180" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="181" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="182" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="183" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="184" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="185" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="186" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="187" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="188" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="-20.6044 0.14 6.66777" rotation="180 -73.7987 -180" nodeId="189">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="190" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="191" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="192" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="193" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="194" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="195" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="196" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="197" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="198" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="199" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="200" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="201" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="202" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="203" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="204" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="205" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="206" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="207" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="208" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="209" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="210" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="211" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="212" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="213" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="214" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="215" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="216" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="217" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="218" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="219" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="220" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="221" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="222" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="223" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="224" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="225" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="226" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="227" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="228" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="229" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="230" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="231" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="232" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="233" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="234" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="235" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="-19.2808 0.14 -7.9374" rotation="0 -76.37 0" nodeId="236">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="237" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="238" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="239" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="240" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="241" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="242" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="243" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="244" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="245" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="246" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="247" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="248" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="249" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="250" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="251" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="252" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="253" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="254" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="255" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="256" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="257" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="258" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="259" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="260" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="261" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="262" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="263" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="264" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="265" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="266" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="267" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="268" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="269" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="270" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="271" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="272" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="273" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="274" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="275" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="276" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="277" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="278" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="279" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="280" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="281" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="282" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="-20.3614 0.14 -23.6712" rotation="0 -89.8209 0" nodeId="283">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="284" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="285" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="286" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="287" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="288" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="289" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="290" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="291" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="292" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="293" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="294" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="295" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="296" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="297" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="298" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="299" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="300" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="301" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="302" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="303" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="304" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="305" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="306" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="307" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="308" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="309" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="310" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="311" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="312" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="313" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="314" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="315" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="316" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="317" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="318" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="319" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="320" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="321" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="322" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="323" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="324" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="325" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="326" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="327" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="328" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="329" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="20.8684 0.14 17.3885" rotation="0 13.7127 0" nodeId="330">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="331" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="332" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="333" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="334" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="335" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="336" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="337" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="338" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="339" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="340" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="341" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="342" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="343" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="344" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="345" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="346" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="347" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="348" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="349" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="350" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="351" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="352" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="353" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="354" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="355" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="356" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="357" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="358" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="359" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="360" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="361" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="362" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="363" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="364" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="365" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="366" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="367" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="368" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="369" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="370" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="371" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="372" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="373" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="374" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="375" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="376" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="-5.34093 0.139999 -24.4899" rotation="-180 -76.0722 -180" nodeId="377">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="378" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="379" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="380" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="381" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="382" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="383" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="384" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="385" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="386" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="387" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="388" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="389" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="390" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="391" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="392" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="393" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="394" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="395" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="396" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="397" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="398" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="399" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="400" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="401" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="402" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="403" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="404" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="405" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="406" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="407" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="408" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="409" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="410" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="411" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="412" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="413" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="414" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="415" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="416" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="417" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="418" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="419" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="420" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="421" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="422" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="423" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="0.828965 0.14 -25.0039" rotation="-3.69105e-06 -85.381 1.73374e-05" nodeId="424">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="425" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="426" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="427" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="428" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="429" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="430" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="431" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="432" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="433" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="434" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="435" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="436" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="437" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="438" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="439" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="440" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="441" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="442" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="443" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="444" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="445" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="446" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="447" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="448" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="449" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="450" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="451" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="452" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="453" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="454" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="455" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="456" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="457" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="458" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="459" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="460" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="461" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="462" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="463" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="464" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="465" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="466" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="467" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="468" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="469" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="470" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="21.7368 0.140003 -25.8982" rotation="-180 -83.1962 -180" nodeId="471">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="472" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="473" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="474" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="475" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="476" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="477" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="478" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="479" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="480" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="481" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="482" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="483" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="484" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="485" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="486" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="487" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="488" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="489" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="490" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="491" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="492" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="493" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="494" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="495" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="496" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="497" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="498" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="499" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="500" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="501" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="502" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="503" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="504" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="505" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="506" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="507" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="508" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="509" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="510" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="511" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="512" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="513" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="514" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="515" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="516" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="517" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="22.5338 0.14 -3.51546" rotation="0 -79.19 0" nodeId="518">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="519" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="520" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="521" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="522" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="523" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="524" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="525" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="526" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="527" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="528" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="529" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="530" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="531" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="532" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="533" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="534" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="535" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="536" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="537" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="538" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="539" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="540" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="541" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="542" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="543" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="544" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="545" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="546" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="547" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="548" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="549" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="550" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="551" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="552" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="553" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="554" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="555" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="556" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="557" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="558" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="559" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="560" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="561" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="562" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="563" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="564" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="20.074 0.14 6.68382" rotation="180 -70.26 -180" nodeId="567">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="568" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="569" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="570" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="571" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="572" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="573" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="574" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="575" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="576" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="577" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="578" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="579" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="580" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="581" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="582" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="583" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="584" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="585" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="586" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="587" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="588" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="589" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="590" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="591" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="592" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="593" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="594" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="595" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="596" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="597" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="598" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="599" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="600" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="601" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="602" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="603" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="604" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="605" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="606" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="607" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="608" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="609" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="610" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="611" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="612" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="613" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="plane0" translation="4.76064 0.139999 -24.0739" rotation="-180 -82.171 -180" nodeId="614">
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" static="true" clipDistance="200" nodeId="615" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 0 0.299693" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="616" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.277846 0.128738" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="617" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0 0.642722" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="618" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0 1.03285" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="619" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0495891 0.271595 0.449747" rotation="20 0 0" static="true" clipDistance="200" nodeId="620" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0762057 0.546207 0.323182" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="621" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.30071 0.823945" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="622" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.617257 0.65742" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="623" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.788828 0.0674048" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="624" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.116573 0.838943 0.419265" static="true" clipDistance="200" nodeId="625" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.101276 1.08753 0.249249" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="626" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.00383327 1.40377" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="627" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.322006 1.24181" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="628" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.000132517 0.644381 1.03756" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="629" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.27372 0.0136348" rotation="110 0 0" static="true" clipDistance="200" nodeId="630" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 0.915396 0.814204" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="631" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 -0.0056254 1.74419" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="632" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.325602 1.61145" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="633" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.1841 0.586079" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="634" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.38145 0.29606" rotation="110 0 0" static="true" clipDistance="200" nodeId="635" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.57665 0.0766735" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="636" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 0.605417 1.39961" rotation="2 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="637" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.102735 0.0266364 2.0955" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="638" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.113809 0.0241282 2.47599" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="639" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 0.893485 1.26593" static="true" clipDistance="200" nodeId="640" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 0.338899 1.95943" rotation="20 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="641" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.107266 1.12455 1.0665" rotation="60 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="642" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.209526 0.360929 2.30221" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="643" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0489004 0.696191 2.49645" rotation="20 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="644" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.111176 0.607114 1.80052" rotation="60 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="645" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0 0.662985 2.11569" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="646" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 0.889012 1.60778" rotation="110 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="647" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0774801 0.996517 1.96879" rotation="2 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="648" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.13198 1.38203" rotation="60 0 0" static="true" clipDistance="200" nodeId="649" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.39567 1.24293" rotation="110 0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="650" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.22161 1.40932 0.884651" rotation="20 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="651" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0840058 1.56773 0.57312" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="652" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.267901 1.27769 1.69278" rotation="60 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="653" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.64367 1.08333" rotation="110 0 0" static="true" clipDistance="200" nodeId="654" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0439446 1.00214 2.31966" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="655" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0290982 1.25366 2.52531" rotation="110 0 0" scale="1 1.2 1.2" static="true" clipDistance="200" nodeId="656" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.155087 1.31724 2.17664" rotation="60 0 0" scale="1 1.3 1.3" static="true" clipDistance="200" nodeId="657" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.00488235 1.63336 1.50992" rotation="110 0 0" scale="1 1.4 1.4" static="true" clipDistance="200" nodeId="658" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="-0.0881943 1.53239 1.92539" rotation="60 0 0" static="true" clipDistance="200" nodeId="659" materialIds="13" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="woodenTrunk01snow_vis" translation="0.0169931 1.56473 2.40521" rotation="20 -0 0" scale="1 1.1 1.1" static="true" clipDistance="200" nodeId="660" materialIds="13" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="clearAreas" translation="6 0 -8" nodeId="81">
+        <TransformGroup name="clearAreas" translation="-25 0 -35" nodeId="81">
           <TransformGroup name="clearArea1Start" nodeId="82">
-            <TransformGroup name="clearArea1Width" translation="-12 0 0" nodeId="83"/>
-            <TransformGroup name="clearArea1Height" translation="0 0 18" nodeId="84"/>
+            <TransformGroup name="clearArea1Width" translation="50 0 0" nodeId="83"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 60" nodeId="84"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="levelAreas" translation="-6 0 -8" nodeId="85">
+        <TransformGroup name="levelAreas" translation="-25 0 -35" nodeId="85">
           <TransformGroup name="levelArea1Start" nodeId="86">
-            <TransformGroup name="levelArea1Width" translation="12 0 0" nodeId="87"/>
-            <TransformGroup name="levelArea1Height" translation="0 0 18" nodeId="88"/>
+            <TransformGroup name="levelArea1Width" translation="50 0 0" nodeId="87"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 60" nodeId="88"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="palletSpawner" translation="-4 0 5" rotation="1.98546e-09 0 0" nodeId="89">
+        <TransformGroup name="palletSpawner" translation="-8 0 3" rotation="0 90 0" nodeId="89">
           <TransformGroup name="palletStripes" nodeId="90">
-            <Shape shapeId="7" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="91" materialIds="12" receiveShadows="true" decalLayer="1">
-              <Shape shapeId="7" name="warningStripesCorner" translation="1.96718e-07 0 2" rotation="0 90 0" clipDistance="200" nodeId="92" materialIds="12" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="9" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="91" materialIds="12" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="1.96718e-07 0 3" rotation="0 90 0" clipDistance="200" nodeId="92" materialIds="12" receiveShadows="true" decalLayer="1"/>
             </Shape>
-            <Shape shapeId="7" name="warningStripesCorner" translation="9 7.51326e-06 2" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="93" materialIds="12" receiveShadows="true" decalLayer="1">
-              <Shape shapeId="7" name="warningStripesCorner" translation="0 0 2" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="94" materialIds="12" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="9" name="warningStripesCorner" translation="9 7.51326e-06 3" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="93" materialIds="12" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="0 0 3" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="94" materialIds="12" receiveShadows="true" decalLayer="1"/>
             </Shape>
           </TransformGroup>
           <TransformGroup name="palletSpawnerRight" translation="0 0.3 1" nodeId="95">
@@ -180,30 +725,41 @@
             <TransformGroup name="palletSpawnerRight2start" translation="0 1.25 0" nodeId="98">
               <TransformGroup name="palletSpawnerRight2end" translation="9 0 0" nodeId="99"/>
             </TransformGroup>
-            <TransformGroup name="palletSpawnerRight3start" translation="0 2.5 0" nodeId="100">
-              <TransformGroup name="palletSpawnerRight3end" translation="9 0 0" nodeId="101"/>
+            <TransformGroup name="palletSpawnerRight3start" translation="0 2.5 0" nodeId="668">
+              <TransformGroup name="palletSpawnerRight3end" translation="9 0 0" nodeId="669"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="palletSpawnerLeft" translation="0 0.3 2" nodeId="661">
+            <TransformGroup name="palletSpawnerLeft1start" nodeId="662">
+              <TransformGroup name="palletSpawnerLeft1end" translation="9 0 0" nodeId="663"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerLeft2start" translation="0 1.25 0" nodeId="664">
+              <TransformGroup name="palletSpawnerLeft2end" translation="9 0 0" nodeId="665"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerLeft3start" translation="0 2.5 0" nodeId="670">
+              <TransformGroup name="palletSpawnerLeft3end" translation="9 0 0" nodeId="671"/>
             </TransformGroup>
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="playerTrigger" nodeId="102">
-          <Shape shapeId="8" name="palletMenuTrigger" translation="2 1 1" scale="2 2 2" static="true" trigger="true" collisionMask="1048576" nodeId="103" materialIds="11" nonRenderable="true" distanceBlending="false"/>
-          <Shape shapeId="8" name="infoTrigger" translation="0 1 1" scale="12 2 18" static="true" trigger="true" collisionMask="1048576" nodeId="104" materialIds="11" nonRenderable="true" distanceBlending="false"/>
-          <TransformGroup name="triggerMarker" translation="2 0 1" nodeId="105"/>
-          <Shape shapeId="8" name="woodSellTrigger" translation="-2 1 1" scale="2 2 2" static="true" trigger="true" collisionMask="1048576" nodeId="106" materialIds="11" nonRenderable="true" distanceBlending="false"/>
-          <TransformGroup name="woodSellTriggerMarker" translation="-2 0 1" nodeId="107"/>
+          <Shape shapeId="10" name="palletMenuTrigger" translation="-15 1 -3.5" scale="4 2 4" static="true" trigger="true" collisionMask="1048576" nodeId="103" materialIds="11" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="10" name="infoTrigger" translation="0 1 -2" scale="35 2 45" static="true" trigger="true" collisionMask="1048576" nodeId="104" materialIds="11" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="triggerMarker" translation="-15 0 -3.5" nodeId="105"/>
+          <Shape shapeId="10" name="woodSellTrigger" translation="15 1 -1" scale="4 2 4" static="true" trigger="true" collisionMask="1048576" nodeId="106" materialIds="11" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="woodSellTriggerMarker" translation="15 0 -1" nodeId="107"/>
         </TransformGroup>
-        <TransformGroup name="unloadingStation" translation="0.5 0 3" rotation="0 90 0" nodeId="108">
-          <Shape shapeId="8" name="exactFillRootNode" translation="0 -0.5 0" scale="2 1 9" static="true" trigger="true" collisionMask="1073741824" nodeId="109" materialIds="11" nonRenderable="true" distanceBlending="false"/>
+        <TransformGroup name="unloadingStation" translation="10 0 -2" nodeId="108">
+          <Shape shapeId="10" name="exactFillRootNode" translation="0 -0.5 0" scale="6 1 16" static="true" trigger="true" collisionMask="1073741824" nodeId="109" materialIds="11" nonRenderable="true" distanceBlending="false"/>
           <TransformGroup name="markerUnloading" nodeId="110"/>
-          <TransformGroup name="unloadingStripes" translation="8.74228e-08 0 4.5" rotation="0 90 0" nodeId="111">
-            <Shape shapeId="7" name="warningStripesCorner" translation="1.74846e-07 0 -1" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="112" materialIds="12" receiveShadows="true" decalLayer="1">
-              <Shape shapeId="7" name="warningStripesCorner" translation="7.03351e-07 -4.4576e-13 2" rotation="0 90 0" clipDistance="200" nodeId="113" materialIds="12" receiveShadows="true" decalLayer="1"/>
+          <TransformGroup name="unloadingStripes" translation="0 0 8" rotation="0 90 0" nodeId="111">
+            <Shape shapeId="9" name="warningStripesCorner" translation="1.74846e-07 0 -3" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="112" materialIds="12" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="7.03351e-07 -4.4576e-13 6" rotation="0 90 0" clipDistance="200" nodeId="113" materialIds="12" receiveShadows="true" decalLayer="1"/>
             </Shape>
-            <Shape shapeId="7" name="warningStripesCorner" translation="9 5.64713e-06 1" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="114" materialIds="12" receiveShadows="true" decalLayer="1">
-              <Shape shapeId="7" name="warningStripesCorner" translation="7.86805e-07 5.43934e-14 2" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="115" materialIds="12" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="9" name="warningStripesCorner" translation="16 5.64713e-06 3" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="114" materialIds="12" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="7.86805e-07 5.43934e-14 6" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="115" materialIds="12" receiveShadows="true" decalLayer="1"/>
             </Shape>
           </TransformGroup>
-          <Shape shapeId="8" name="woodTrigger" translation="0 1.5 0" scale="2 3 9" static="true" trigger="true" collisionMask="16777216" nodeId="116" materialIds="11" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="10" name="woodTrigger" translation="0 2 0" scale="6 4 16" static="true" trigger="true" collisionMask="16777216" nodeId="116" materialIds="11" nonRenderable="true" distanceBlending="false"/>
         </TransformGroup>
         <TransformGroup name="foliageAreas" nodeId="117">
           <TransformGroup name="foliageArea1Start" translation="7 0 16" nodeId="118">
@@ -217,31 +773,18 @@
             <TransformGroup name="indoorArea1Height" translation="0 0 14" nodeId="124"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="tipOcclusionUpdateAreas" translation="-11 0 -7" nodeId="125">
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="-25 0 -35" nodeId="125">
           <TransformGroup name="tipOcclusionUpdateArea1Start" nodeId="126">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="17 0 22" nodeId="127"/>
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="50 0 60" nodeId="127"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="testAreas" translation="-11 0 -7" nodeId="128">
+        <TransformGroup name="testAreas" translation="-25 0 -35" nodeId="128">
           <TransformGroup name="testArea1Start" nodeId="129">
-            <TransformGroup name="testArea1End" translation="16 7 22" nodeId="130"/>
+            <TransformGroup name="testArea1End" translation="50 7 60" nodeId="130"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
-      <Camera name="Camera" translation="12.1244 3.63044 10.7098" rotation="-16.8183 88.1568 -2.09974e-05" nodeId="131" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
-      <Shape shapeId="9" name="kettenbagger_Mesh" translation="-8.19415 0 -3.58" static="true" clipDistance="1000" nodeId="132" materialIds="8,4" castsShadows="true" receiveShadows="true"/>
-      <TransformGroup name="wall_small_sidesClose" translation="2 0 12" nodeId="133">
-        <Shape shapeId="10" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="134" materialIds="5" castsShadows="true" receiveShadows="true"/>
-      </TransformGroup>
-      <TransformGroup name="wall_small_sidesClose" translation="2 0 9" nodeId="135">
-        <Shape shapeId="10" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="136" materialIds="5" castsShadows="true" receiveShadows="true"/>
-      </TransformGroup>
-      <TransformGroup name="wall_small_sidesClose" translation="-2 0 12" nodeId="137">
-        <Shape shapeId="10" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="138" materialIds="5" castsShadows="true" receiveShadows="true"/>
-      </TransformGroup>
-      <TransformGroup name="wall_small_sidesClose" translation="-2 0 9" nodeId="139">
-        <Shape shapeId="10" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="140" materialIds="5" castsShadows="true" receiveShadows="true"/>
-      </TransformGroup>
+      <Camera name="Camera" translation="-20.3502 83.974 37.4497" rotation="-62.89 -18.0363 -2.80592e-08" nodeId="131" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
   </Scene>
 
 </i3D>
