@@ -24,16 +24,16 @@
         <sourceFile filename="scripts/main.lua"/>
     </extraSourceFiles>
     <placeableSpecializations>
-        <specialization name="siloObjectFillLevelSpezialisation" className="SiloObjectFillLevelSpezialisation" filename="scripts/siloObjectFillLevelSpezialisation.lua"/>
-        <specialization name="siloDisplaySpezialisation" className="SiloDisplaySpezialisation" filename="scripts/siloDisplaySpezialisation.lua"/>
+        <specialization name="siloObjectFillLevel" className="SiloObjectFillLevelSpecialization" filename="scripts/siloObjectFillLevelSpecialization.lua"/>
+        <specialization name="siloDisplay" className="SiloDisplaySpecialization" filename="scripts/siloDisplaySpecialization.lua"/>
     </placeableSpecializations>
     <l10n>
     </l10n>
     <placeableTypes>
         <type name="SiloWithPallet" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
             <specialization name="aPalletSilo"/>
-            <specialization name="siloObjectFillLevelSpezialisation"/>
-            <specialization name="siloDisplaySpezialisation"/>
+            <specialization name="siloObjectFillLevel"/>
+            <specialization name="siloDisplay"/>
         </type>
     </placeableTypes>
 </modDesc>

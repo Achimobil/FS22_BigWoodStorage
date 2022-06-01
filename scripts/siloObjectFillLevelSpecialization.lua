@@ -2,8 +2,8 @@
 Copyright (C) Achimobil, 2022
 
 Author: Achimobil
-Date: 07.05.2022
-Version: 0.3.1.0
+Date: 01.06.2022
+Version: 0.3.3.0
 
 Contact:
 https://forum.giants-software.com
@@ -15,6 +15,7 @@ V 0.2.0.0 @ 02.05.2022 - Added simple CollisionMash Change on Visible Change
 V 0.3.0.0 @ 03.05.2022 - Added useSubNodesInsteadOfMainNodes
 V 0.3.1.0 @ 07.05.2022 - Fix Collision when subnodes are used
 V 0.3.2.0 @ 10.05.2022 - Add Version and Name for main.lua
+V 0.3.3.0 @ 01.06.2022 - Change Name and output on init
 
 Important:
 Free for use in other mods - no permission needed, only provide my name.
@@ -24,26 +25,27 @@ Frei verwendbar - keine erlaubnis nötig, Namensnennung im Mod erforderlich.
 An diesem Skript dürfen ohne Genehmigung von Achimobil keine Änderungen vorgenommen werden.
 ]]
 
-SiloObjectFillLevelSpezialisation = {
-    Version = "0.3.1.0",
-    Name = "SiloObjectFillLevelSpezialisation"
+SiloObjectFillLevelSpecialization = {
+    Version = "0.3.2.0",
+    Name = "SiloObjectFillLevelSpecialization"
 }
+print(g_currentModName .. " - init " .. SiloObjectFillLevelSpecialization.Name .. "(Version: " .. SiloObjectFillLevelSpecialization.Version .. ")");
 
-function SiloObjectFillLevelSpezialisation.prerequisitesPresent(specializations)
+function SiloObjectFillLevelSpecialization.prerequisitesPresent(specializations)
     return SpecializationUtil.hasSpecialization(PlaceableSilo, specializations);
 end
 
-function SiloObjectFillLevelSpezialisation.registerEventListeners(placeableType)
-	SpecializationUtil.registerEventListener(placeableType, "onLoad", SiloObjectFillLevelSpezialisation);
-	SpecializationUtil.registerEventListener(placeableType, "onFinalizePlacement", SiloObjectFillLevelSpezialisation);
-	SpecializationUtil.registerEventListener(placeableType, "onPostFinalizePlacement", SiloObjectFillLevelSpezialisation);
+function SiloObjectFillLevelSpecialization.registerEventListeners(placeableType)
+	SpecializationUtil.registerEventListener(placeableType, "onLoad", SiloObjectFillLevelSpecialization);
+	SpecializationUtil.registerEventListener(placeableType, "onFinalizePlacement", SiloObjectFillLevelSpecialization);
+	SpecializationUtil.registerEventListener(placeableType, "onPostFinalizePlacement", SiloObjectFillLevelSpecialization);
 end
 
-function SiloObjectFillLevelSpezialisation.registerFunctions(placeableType)
-	SpecializationUtil.registerFunction(placeableType, "updateObjectFillLevels", SiloObjectFillLevelSpezialisation.updateObjectFillLevels);
+function SiloObjectFillLevelSpecialization.registerFunctions(placeableType)
+	SpecializationUtil.registerFunction(placeableType, "updateObjectFillLevels", SiloObjectFillLevelSpecialization.updateObjectFillLevels);
 end
 
-function SiloObjectFillLevelSpezialisation.registerXMLPaths(schema, basePath)
+function SiloObjectFillLevelSpecialization.registerXMLPaths(schema, basePath)
 	schema:setXMLSpecializationType("SiloDisplay");
     
 	schema:register(XMLValueType.NODE_INDEX, basePath .. ".silo.siloObjectFillLevels.siloObjectFillLevel(?)#rootNode", "Root Node, all directChilds are taken from as filltype");
@@ -54,7 +56,7 @@ function SiloObjectFillLevelSpezialisation.registerXMLPaths(schema, basePath)
 	schema:setXMLSpecializationType();
 end
 
-function SiloObjectFillLevelSpezialisation:onLoad(savegame)
+function SiloObjectFillLevelSpecialization:onLoad(savegame)
     self.spec_siloObjectFillLevel = {};
 	local spec = self.spec_siloObjectFillLevel;
 	local xmlFile = self.xmlFile;
@@ -106,19 +108,19 @@ function SiloObjectFillLevelSpezialisation:onLoad(savegame)
 	end    
 end
 
-function SiloObjectFillLevelSpezialisation:onFinalizePlacement(savegame)
+function SiloObjectFillLevelSpecialization:onFinalizePlacement(savegame)
 	local spec = self.spec_siloObjectFillLevel;
 	for _, sourceStorage in pairs(self.spec_silo.loadingStation:getSourceStorages()) do
         sourceStorage:addFillLevelChangedListeners(spec.fillLevelChangedCallback);
     end
 end
 
-function SiloObjectFillLevelSpezialisation:onPostFinalizePlacement(savegame)
+function SiloObjectFillLevelSpecialization:onPostFinalizePlacement(savegame)
     self:updateObjectFillLevels();
 end
 
 
-function SiloObjectFillLevelSpezialisation:updateObjectFillLevels()
+function SiloObjectFillLevelSpecialization:updateObjectFillLevels()
 	local spec = self.spec_siloObjectFillLevel;
 	local farmId = self:getOwnerFarmId();
     

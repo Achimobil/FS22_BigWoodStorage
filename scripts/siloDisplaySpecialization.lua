@@ -2,8 +2,8 @@
 Copyright (C) Achimobil & braeven, 2022
 
 Author: Achimobil
-Date: 16.05.2022
-Version: 0.1.1.0
+Date: 01.06.2022
+Version: 0.1.2.0
 
 Contact:
 https://forum.giants-software.com
@@ -12,6 +12,7 @@ https://discord.gg/Va7JNnEkcW
 History:
 V 0.1.0.0 @ 24.04.2022 - First Version.
 V 0.1.1.0 @ 16.05.2022 - Add Version and Name for main.lua
+V 0.1.2.0 @ 01.06.2022 - Change Name and output on init
 
 Important:
 Free for use in other mods - no permission needed, only provide my name.
@@ -21,26 +22,27 @@ Frei verwendbar - keine erlaubnis nötig, Namensnennung im Mod erforderlich.
 An diesem Skript dürfen ohne Genehmigung von Achimobil keine Änderungen vorgenommen werden.
 ]]
 
-SiloDisplaySpezialisation = {
-    Version = "0.1.1.0",
-    Name = "SiloDisplaySpezialisation"
+SiloDisplaySpecialization = {
+    Version = "0.1.2.0",
+    Name = "SiloDisplaySpecialization"
 }
+print(g_currentModName .. " - init " .. SiloDisplaySpecialization.Name .. "(Version: " .. SiloDisplaySpecialization.Version .. ")");
 
-function SiloDisplaySpezialisation.prerequisitesPresent(specializations)
+function SiloDisplaySpecialization.prerequisitesPresent(specializations)
     return SpecializationUtil.hasSpecialization(PlaceableSilo, specializations);
 end
 
-function SiloDisplaySpezialisation.registerEventListeners(placeableType)
-	SpecializationUtil.registerEventListener(placeableType, "onLoad", SiloDisplaySpezialisation);
-	SpecializationUtil.registerEventListener(placeableType, "onFinalizePlacement", SiloDisplaySpezialisation);
-	SpecializationUtil.registerEventListener(placeableType, "onPostFinalizePlacement", SiloDisplaySpezialisation);
+function SiloDisplaySpecialization.registerEventListeners(placeableType)
+	SpecializationUtil.registerEventListener(placeableType, "onLoad", SiloDisplaySpecialization);
+	SpecializationUtil.registerEventListener(placeableType, "onFinalizePlacement", SiloDisplaySpecialization);
+	SpecializationUtil.registerEventListener(placeableType, "onPostFinalizePlacement", SiloDisplaySpecialization);
 end
 
-function SiloDisplaySpezialisation.registerFunctions(placeableType)
-	SpecializationUtil.registerFunction(placeableType, "updateDisplays", SiloDisplaySpezialisation.updateDisplays);
+function SiloDisplaySpecialization.registerFunctions(placeableType)
+	SpecializationUtil.registerFunction(placeableType, "updateDisplays", SiloDisplaySpecialization.updateDisplays);
 end
 
-function SiloDisplaySpezialisation.registerXMLPaths(schema, basePath)
+function SiloDisplaySpecialization.registerXMLPaths(schema, basePath)
 	schema:setXMLSpecializationType("SiloDisplay");
     
 	schema:register(XMLValueType.NODE_INDEX, basePath .. ".silo.siloDisplays.siloDisplay(?)#node", "Display start node");
@@ -58,7 +60,7 @@ function SiloDisplaySpezialisation.registerXMLPaths(schema, basePath)
 	schema:setXMLSpecializationType();
 end
 
-function SiloDisplaySpezialisation:onLoad(savegame)
+function SiloDisplaySpecialization:onLoad(savegame)
     self.spec_siloDisplay = {};
 	local spec = self.spec_siloDisplay;
 	local xmlFile = self.xmlFile;
@@ -111,19 +113,19 @@ function SiloDisplaySpezialisation:onLoad(savegame)
 	end    
 end
 
-function SiloDisplaySpezialisation:onFinalizePlacement(savegame)
+function SiloDisplaySpecialization:onFinalizePlacement(savegame)
 	local spec = self.spec_siloDisplay;
 	for _, sourceStorage in pairs(self.spec_silo.loadingStation:getSourceStorages()) do
         sourceStorage:addFillLevelChangedListeners(spec.fillLevelChangedCallback);
     end
 end
 
-function SiloDisplaySpezialisation:onPostFinalizePlacement(savegame)
+function SiloDisplaySpecialization:onPostFinalizePlacement(savegame)
     self:updateDisplays();
 end
 
 
-function SiloDisplaySpezialisation:updateDisplays()
+function SiloDisplaySpecialization:updateDisplays()
 	local spec = self.spec_siloDisplay;
 	local farmId = self:getOwnerFarmId();
     
