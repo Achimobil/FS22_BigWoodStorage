@@ -45,13 +45,13 @@
     
     <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
-            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="gravel"/>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="forestGround"/>
         </levelAreas>
     </leveling>
 	
-	<foliageAreas>
-        <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" />
-    </foliageAreas>
+	<!-- <foliageAreas> -->
+        <!-- <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" /> -->
+    <!-- </foliageAreas> -->
     
     <indoorAreas>
         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
