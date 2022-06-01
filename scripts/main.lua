@@ -17,11 +17,11 @@ local function init()
     local path = modDirectory .. "scripts/SpawnPalletsAtSiloEvent.lua";
     source(path)
     
-    g_placeableSpecializationManager:addSpecialization("siloObjectFillLevelSpezialisation", "SiloObjectFillLevelSpezialisation", modDirectory .. "scripts/siloObjectFillLevelSpezialisation.lua", nil)
-    print(modName .. " - init " .. SiloObjectFillLevelSpezialisation.Name .. "(Version: " .. SiloObjectFillLevelSpezialisation.Version .. ")");
+    -- g_placeableSpecializationManager:addSpecialization("siloObjectFillLevelSpezialisation", "SiloObjectFillLevelSpezialisation", modDirectory .. "scripts/siloObjectFillLevelSpezialisation.lua", nil)
+    -- print(modName .. " - init " .. SiloObjectFillLevelSpezialisation.Name .. "(Version: " .. SiloObjectFillLevelSpezialisation.Version .. ")");
     
-    g_placeableSpecializationManager:addSpecialization("siloDisplaySpezialisation", "SiloDisplaySpezialisation", modDirectory .. "scripts/siloDisplaySpezialisation.lua", nil)
-    print(modName .. " - init " .. SiloDisplaySpezialisation.Name .. "(Version: " .. SiloDisplaySpezialisation.Version .. ")");
+    -- g_placeableSpecializationManager:addSpecialization("siloDisplaySpezialisation", "SiloDisplaySpezialisation", modDirectory .. "scripts/siloDisplaySpezialisation.lua", nil)
+    -- print(modName .. " - init " .. SiloDisplaySpezialisation.Name .. "(Version: " .. SiloDisplaySpezialisation.Version .. ")");
 end
 
 init()

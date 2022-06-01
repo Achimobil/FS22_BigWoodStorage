@@ -3,15 +3,14 @@
     <author>Achimobil</author>
     <version>0.1.0.0</version>
     <title>
+        <de>Holzlager</de>
         <en>Wood Storage</en>
     </title>
     <description>
+        <de>
+            <![CDATA[Holzlager]]></de>
         <en>
             <![CDATA[Wood Storage]]></en>
-        <de>
-            <![CDATA[Wood Storage]]></de>
-        <fr>
-            <![CDATA[Wood Storage]]></fr>
     </description>
     <multiplayer supported="true"/>
     <iconFilename>icon.dds</iconFilename>
@@ -24,6 +23,10 @@
     <extraSourceFiles>
         <sourceFile filename="scripts/main.lua"/>
     </extraSourceFiles>
+    <placeableSpecializations>
+        <specialization name="siloObjectFillLevelSpezialisation" className="SiloObjectFillLevelSpezialisation" filename="scripts/siloObjectFillLevelSpezialisation.lua"/>
+        <specialization name="siloDisplaySpezialisation" className="SiloDisplaySpezialisation" filename="scripts/siloDisplaySpezialisation.lua"/>
+    </placeableSpecializations>
     <l10n>
     </l10n>
     <placeableTypes>
