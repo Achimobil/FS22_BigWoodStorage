@@ -28,6 +28,39 @@
         <specialization name="siloDisplay" className="SiloDisplaySpecialization" filename="scripts/siloDisplaySpecialization.lua"/>
     </placeableSpecializations>
     <l10n>
+        <text name="woodStorage">
+            <de>Holzlager</de>
+            <en>Wood Storage</en>
+        </text>
+        <text name="function_woodStorage">
+            <de>Lager für Holz</de>
+            <en>Storage for Wood</en>
+        </text>
+        <text name="ExtractPallets">
+            <en>Extract material</en>
+            <de>Material auslagern</de>
+        </text>
+        <text name="ChooseWhatToPutOut">
+            <en>Choose material</en>
+            <de>Material wählen</de>
+            <it>Seleziona il materiale</it>
+        </text>
+        <text name="ChooseBaleType">
+            <en>Choose BalesTypes</en>
+            <de>Ballen-Typ wählen</de>
+        </text>
+        <text name="ChooseAmountToPutOut">
+            <en>Choose amount to put out</en>
+            <de>Anzahl wählen</de>
+        </text>
+        <text name="PalletSiloItem">
+            <en>Pallets</en>
+            <de>Paletten</de>
+        </text>
+        <text name="BaleSiloItem">
+            <en>Bales</en>
+            <de>Ballen</de>
+        </text>
     </l10n>
     <placeableTypes>
         <type name="SiloWithPallet" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">

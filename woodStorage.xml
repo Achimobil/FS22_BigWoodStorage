@@ -52,12 +52,8 @@
         </levelAreas>
     </leveling>
 	
-	<!-- <foliageAreas> -->
-        <!-- <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" /> -->
-    <!-- </foliageAreas> -->
-    
     <indoorAreas>
-        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <!-- <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/> -->
     </indoorAreas>
 	
     <tipOcclusionUpdateAreas>
@@ -87,22 +83,21 @@
         
         <unloadingStation supportsExtension="false" storageRadius="0">
             <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="WOOD">
-                <!-- <baleTrigger triggerNode="baleTrigger"/> -->
                 <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodSellTrigger"/>
             </unloadTrigger>
         </unloadingStation>
                 
         <storages>
-            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="400000">
+            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="4000000">
             </storage>
         </storages>
             
         <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
-            <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="400000"/>
+            <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="4000000"/>
         </siloObjectFillLevels>
         
         <SiloDisplays>
-            <SiloDisplay fillType="WOOD" node="Display" size="0.12" mask="0000000"/>
+            <SiloDisplay fillType="WOOD" node="Display" size="0.12" mask="3900000"/>
         </SiloDisplays>
     </silo>
     
