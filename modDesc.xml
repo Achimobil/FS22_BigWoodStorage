@@ -2,31 +2,41 @@
 <modDesc descVersion="65">
     <author>Achimobil</author>
     <version>0.1.1.0</version>
+    
     <title>
         <de>Holzlager</de>
         <en>Wood Storage</en>
     </title>
+    
     <description>
         <de>
             <![CDATA[Holzlager]]></de>
         <en>
             <![CDATA[Wood Storage]]></en>
     </description>
+    
     <multiplayer supported="true"/>
+    
     <iconFilename>icon.dds</iconFilename>
+    
     <storeItems>
         <storeItem xmlFilename="woodStorage.xml"/>
     </storeItems>
+    
     <brands>
         <brand name="FARMERTOOLS" title="Farmer Tools" image="store/FarmerTools.dds"/>
     </brands>
-    <extraSourceFiles>
-        <sourceFile filename="scripts/main.lua"/>
-    </extraSourceFiles>
-    <placeableSpecializations>
-        <specialization name="siloObjectFillLevel" className="SiloObjectFillLevelSpecialization" filename="scripts/siloObjectFillLevelSpecialization.lua"/>
-        <specialization name="siloDisplay" className="SiloDisplaySpecialization" filename="scripts/siloDisplaySpecialization.lua"/>
-    </placeableSpecializations>
+    
+    <dependencies>
+        <dependency>FS22_A_ProductionRevamp</dependency>
+    </dependencies>
+    
+	<extraSourceFiles>
+        <sourceFile filename="scripts/revamp_check.lua" />              
+	</extraSourceFiles>
+
+    <revamp minVersion="1.3.0.0" />
+    
     <l10n>
         <text name="woodStorage">
             <de>Holzlager</de>
@@ -36,37 +46,5 @@
             <de>Lager für Holz</de>
             <en>Storage for Wood</en>
         </text>
-        <text name="ExtractPallets">
-            <en>Extract material</en>
-            <de>Material auslagern</de>
-        </text>
-        <text name="ChooseWhatToPutOut">
-            <en>Choose material</en>
-            <de>Material wählen</de>
-            <it>Seleziona il materiale</it>
-        </text>
-        <text name="ChooseBaleType">
-            <en>Choose BalesTypes</en>
-            <de>Ballen-Typ wählen</de>
-        </text>
-        <text name="ChooseAmountToPutOut">
-            <en>Choose amount to put out</en>
-            <de>Anzahl wählen</de>
-        </text>
-        <text name="PalletSiloItem">
-            <en>Pallets</en>
-            <de>Paletten</de>
-        </text>
-        <text name="BaleSiloItem">
-            <en>Bales</en>
-            <de>Ballen</de>
-        </text>
     </l10n>
-    <placeableTypes>
-        <type name="SiloWithPallet" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
-            <specialization name="aPalletSilo"/>
-            <specialization name="siloObjectFillLevel"/>
-            <specialization name="siloDisplay"/>
-        </type>
-    </placeableTypes>
 </modDesc>
