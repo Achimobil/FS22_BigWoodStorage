@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="65">
+<modDesc descVersion="68">
     <author>Achimobil</author>
-    <version>0.1.1.0</version>
+    <version>0.2.0.0</version>
     
     <title>
-        <de>Holzlager</de>
-        <en>Wood Storage</en>
+        <de>Großes Holzlager</de>
+        <en>Big Wood Storage</en>
     </title>
     
     <description>
@@ -39,8 +39,8 @@
     
     <l10n>
         <text name="woodStorage">
-            <de>Holzlager</de>
-            <en>Wood Storage</en>
+            <de>Großes Holzlager</de>
+            <en>Big Wood Storage</en>
         </text>
         <text name="function_woodStorage">
             <de>Lager für Holz</de>
