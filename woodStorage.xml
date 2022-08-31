@@ -25,7 +25,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
     
-    <aPalletSilo triggerNode="palletMenuTrigger" woodSpawnPlace="palletSpawnerRight3start" maxWoodLogs="10">
+    <aPalletSilo triggerNode="palletMenuTrigger" woodSpawnPlace="woodSpawner" maxWoodLogs="10">
         <palletSpawner node="palletSpawner">
             <spawnPlaces>
                 <spawnPlace startNode="palletSpawnerRight1start"/>
@@ -126,6 +126,7 @@
         <i3dMapping id="palletSpawnerLeft1start" node="0>4|2|0"/>
         <i3dMapping id="palletSpawnerLeft2start" node="0>4|2|1"/>
         <i3dMapping id="palletSpawnerLeft3start" node="0>4|2|2"/>
+        <i3dMapping id="woodSpawner" node="0>4|3"/>
         <i3dMapping id="palletMenuTrigger" node="0>5|0"/>
         <i3dMapping id="infoTrigger" node="0>5|1"/>
         <i3dMapping id="triggerMarker" node="0>5|2"/>
