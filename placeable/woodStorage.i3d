@@ -1072,8 +1072,8 @@
             </TransformGroup>
           </Shape>
         </TransformGroup>
+        <Camera name="Camera" translation="15.3225 10.0377 -9.80068" rotation="152.172 63.7004 -180" nodeId="844" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
       </TransformGroup>
-      <Camera name="Camera" translation="-13.482 6.51455 0.731898" rotation="-38.1409 -74.661 -1.68938e-06" nodeId="844" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
   </Scene>
 
 </i3D>
