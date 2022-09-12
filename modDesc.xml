@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="68">
+<modDesc descVersion="69">
     <author>Achimobil</author>
-    <version>0.2.0.0</version>
+    <version>1.0.0.0</version>
     
     <title>
         <de>Großes Holzlager</de>
@@ -10,9 +10,25 @@
     
     <description>
         <de>
-            <![CDATA[Holzlager]]></de>
+            <![CDATA[Holzlager wo Holz in Stämmen oder, wenn von der Karte unterstützt, in Paletten abgeliefert und abgeholt werden kann.
+
+Das spawnen der Paletten übernimmt hierbei Revamp und ist auf die dortigen Möglichkeiten beschränkt.
+Aktuell können nur Fichte Stämme mit 6m länge ausgelagert werden. 
+Dies wird sicherlich in der Zukunft noch erweitert werden.
+
+Preis: 50.000
+Täglicher Unterhalt: 50
+Kapazität 4.000.000]]></de>
         <en>
-            <![CDATA[Wood Storage]]></en>
+            <![CDATA[Wood storage where wood can be delivered and fetched in logs or, if supported by the map, in pallets.
+
+The spawning of the pallets is done by Revamp and is limited to the possibilities there.
+Currently, only spruce logs with a length of 6m can be retrieved. 
+This will certainly be extended in the future.
+
+Price: 50.000
+Daily maintenance: 50
+Capacity 4.000.000]]></en>
     </description>
     
     <multiplayer supported="true"/>
