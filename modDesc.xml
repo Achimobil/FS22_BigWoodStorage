@@ -6,6 +6,7 @@
     <title>
         <de>Großes Holzlager</de>
         <en>Big Wood Storage</en>
+        <ru>Большой склад древесины</ru>
     </title>
     
     <description>
@@ -57,10 +58,12 @@ Capacity 4.000.000L]]></en>
         <text name="woodStorage">
             <de>Großes Holzlager</de>
             <en>Big Wood Storage</en>
+            <ru>Большой склад древесины</ru>
         </text>
         <text name="function_woodStorage">
             <de>Lager für Holz</de>
             <en>Storage for Wood</en>
+            <ru>Склад для древесины</ru>
         </text>
     </l10n>
 </modDesc>
