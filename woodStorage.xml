@@ -95,10 +95,6 @@
         <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
             <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="4000000"/>
         </siloObjectFillLevels>
-        
-        <SiloDisplays>
-            <SiloDisplay fillType="WOOD" node="Display" size="0.12" mask="3900000"/>
-        </SiloDisplays>
     </silo>
     
     <triggerMarkers>
@@ -139,7 +135,6 @@
 		<i3dMapping id="foliageArea1Start" node="0>7|0" />
         <i3dMapping id="foliageArea1Width" node="0>7|0|0" />
         <i3dMapping id="foliageArea1Height" node="0>7|0|1" />
-        <i3dMapping id="Display" node="0>1|2" />
         <i3dMapping id="indoorArea1Start" node="0>8|0"/>
         <i3dMapping id="indoorArea1Width" node="0>8|0|0"/>
         <i3dMapping id="indoorArea1Height" node="0>8|0|1"/>
