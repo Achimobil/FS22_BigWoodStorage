@@ -22,7 +22,9 @@ Unterhalt: 50 €/Tag
 Kapazität 4.000.000L
 
 Changelog 1.1.0.0
-- Holzlänge kann ab Revamp 1.3.5 von 4 bis 12m beim auslagern gewählt werden]]></de>
+- Holzlänge kann ab Revamp 1.3.5 von 4 bis 12m beim auslagern gewählt werden
+- Der alte Bagger wurde verschrottet und die restliche Deko verschoben um mehr Platz für manuelles verladen zu haben
+]]></de>
         <en>
             <![CDATA[Wood storage where wood can be delivered and fetched in logs or, if supported by the map, in pallets.
 
