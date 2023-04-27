@@ -88,12 +88,12 @@
         </unloadingStation>
                 
         <storages>
-            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="4000000">
+            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="6000000">
             </storage>
         </storages>
             
         <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
-            <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="4000000"/>
+            <siloObjectFillLevel fillType="WOOD" rootNode="fillPlanes" maxAtFillLevel="5990000"/>
         </siloObjectFillLevels>
     </silo>
     
