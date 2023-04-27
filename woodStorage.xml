@@ -98,11 +98,11 @@
     </silo>
     
     <triggerMarkers>
-		<triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
-        <triggerMarker node="triggerMarker" filename="markerIcons.xml" id="WORK"/>
-        <triggerMarker node="palletStripes" adjustToGround="false" />
-        <triggerMarker node="unloadingStripes" adjustToGround="false" />
-        <triggerMarker node="woodSellTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" />
+		<triggerMarker node="markerUnloading"		filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="triggerMarker"			filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH"/>
+        <triggerMarker node="woodSellTriggerMarker"	filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" />
+        <triggerMarker node="palletStripes"		adjustToGround="false" />
+        <triggerMarker node="unloadingStripes"	adjustToGround="false" />
     </triggerMarkers>
     
     <i3dMappings>
