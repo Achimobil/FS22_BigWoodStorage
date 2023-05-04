@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="74">
     <author>Achimobil</author>
-    <version>1.1.0.0 beta 1</version>
+    <version>1.1.0.0_beta_2</version>
     
     <title>
         <de>Großes Holzlager</de>
@@ -13,33 +13,35 @@
             <![CDATA[Holzlager wo Holz in Stämmen oder, wenn von der Karte unterstützt, in Paletten abgeliefert und abgeholt werden kann.
 
 Das spawnen der Paletten übernimmt hierbei Revamp und ist auf die dortigen Möglichkeiten beschränkt.
-Aktuell können nur Fichtenstämme mit 4-12m länge ausgelagert werden.
+Aktuell können nur Fichtenstämme mit 6-12m länge ausgelagert werden.
 Dies wird sicherlich in der Zukunft noch erweitert werden.
 
 Preis: 50.000 €
-Unterhalt: 50 €/Tag
+Unterhalt: 50 € / Tag
 Kapazität 6.000.000L
 
 Changelog 1.1.0.0
-- Holzlänge kann von 4 bis 12m beim auslagern gewählt werden
+- Holzlänge kann von 6 bis 12m beim auslagern gewählt werden.
 - Der alte Bagger wurde verschrottet und die restliche Deko verschoben um mehr Platz für manuelles verladen zu haben
 - Kapazität auf 6 Mio erhöht um im vergleich zu anderen Lagern der Größe gerecht zu werden
+- Es wurden Bodenplatten eingezogen um ein besseres aufnehmen der Stämme zu ermöglichen
 ]]></de>
         <en>
             <![CDATA[Wood storage where wood can be delivered and fetched in logs or, if supported by the map, in pallets.
 
 The spawning of the pallets is done by Revamp and is limited to the possibilities there.
-Currently, only spruce logs with a length of 4-12m can be retrieved.
+Currently, only spruce logs with a length of 6-12m can be retrieved.
 This will certainly be extended in the future.
 
 Price: 50.000 $
-Daily maintenance: 50 $
+Daily maintenance: 50 $ / day
 Capacity 6.000.000L
 
 Changelog 1.1.0.0
-- Timber length can be selected from 4 to 12m when spawning
+- Timber length can be selected from 6 to 12m when spawning
 - The old excavator was scrapped and the remaining deco moved to have more space for manual loading
-- Capacity increased to 6 million to match the size of other warehouses]]></en>
+- Capacity increased to 6 million to match the size of other warehouses
+- Floor plates have been inserted to allow for a better pick up of the logs]]></en>
     </description>
     
     <multiplayer supported="true"/>

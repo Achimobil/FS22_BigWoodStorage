@@ -25,7 +25,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
     
-    <aPalletSilo triggerNode="palletMenuTrigger" woodSpawnPlace="woodSpawner" maxWoodLogs="10" minWoodLogLength="4" maxWoodLogLength="12">
+    <aPalletSilo triggerNode="palletMenuTrigger" woodSpawnPlace="woodSpawner" maxWoodLogs="10" minWoodLogLength="6" maxWoodLogLength="12">
         <palletSpawner node="palletSpawner">
             <spawnPlaces>
                 <spawnPlace startNode="palletSpawnerRight1start"/>

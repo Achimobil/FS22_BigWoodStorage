@@ -168,17 +168,19 @@
             <Shape shapeId="13" name="decals" clipDistance="30" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
           </Shape>
           <TransformGroup name="wallElements" translation="0 -0.1 0" nodeId="74">
-            <TransformGroup name="wallElement" translation="-8.00289 0 -1.21133" rotation="0 90 0" nodeId="75">
-              <TransformGroup name="wall_small_sidesClose" translation="2 0 0" nodeId="76">
+            <TransformGroup name="wallElement" translation="-8 0 -4.5" rotation="0 90 0" nodeId="75">
+              <TransformGroup name="wall_small_sidesClose" translation="2.5 0 0" nodeId="76">
                 <Shape shapeId="14" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="77" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="14" name="concrete_wall_small_sidesClosed" translation="1.05992e-08 0.169143 0.0767739" rotation="90 -4.77083e-13 90" scale="1 1.42068 1" static="true" clipDistance="350" nodeId="840" materialIds="5" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
-              <TransformGroup name="wall_small_sidesClose" translation="2 0 3" nodeId="78">
+              <TransformGroup name="wall_small_sidesClose" translation="2.5 0 3" nodeId="78">
                 <Shape shapeId="14" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="79" materialIds="5" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
-              <TransformGroup name="wall_small_sidesClose" translation="-2 0 0" nodeId="80">
+              <TransformGroup name="wall_small_sidesClose" translation="-2.5 0 0" nodeId="80">
                 <Shape shapeId="14" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="81" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="14" name="concrete_wall_small_sidesClosed" translation="1.05992e-08 0.169143 0.0767739" rotation="90 -4.77083e-13 90" scale="1 1.42068 1" static="true" clipDistance="350" nodeId="841" materialIds="5" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
-              <TransformGroup name="wall_small_sidesClose" translation="-2 0 3" nodeId="82">
+              <TransformGroup name="wall_small_sidesClose" translation="-2.5 0 3" nodeId="82">
                 <Shape shapeId="14" name="concrete_wall_small_sidesClosed" rotation="0 90 0" static="true" clipDistance="350" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
               </TransformGroup>
             </TransformGroup>
@@ -955,7 +957,7 @@
           </TransformGroup>
         </TransformGroup>
         <TransformGroup name="palletSpawner" translation="-8 0 3" rotation="0 90 0" nodeId="774">
-          <TransformGroup name="palletStripes" nodeId="775">
+          <TransformGroup name="palletStripes" translation="3 0 0" nodeId="775">
             <Shape shapeId="24" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="776" materialIds="25" receiveShadows="true" decalLayer="1">
               <Shape shapeId="24" name="warningStripesCorner" translation="1.96718e-07 0 3" rotation="0 90 0" clipDistance="200" nodeId="777" materialIds="25" receiveShadows="true" decalLayer="1"/>
             </Shape>
@@ -985,7 +987,7 @@
               <TransformGroup name="palletSpawnerLeft3end" translation="9 0 0" nodeId="793"/>
             </TransformGroup>
           </TransformGroup>
-          <TransformGroup name="woodSpawner" translation="0 3 1.5" rotation="0 90 0" nodeId="794"/>
+          <TransformGroup name="woodSpawner" translation="3 3 1.5" rotation="0 90 0" nodeId="794"/>
         </TransformGroup>
         <TransformGroup name="playerTrigger" nodeId="795">
           <Shape shapeId="25" name="palletMenuTrigger" translation="-15 1 -3.5" scale="4 2 4" static="true" trigger="true" collisionMask="1048576" nodeId="796" materialIds="24" nonRenderable="true" distanceBlending="false"/>
@@ -1052,7 +1054,7 @@
             </TransformGroup>
           </Shape>
         </TransformGroup>
-        <Camera name="Camera" translation="-45.2078 23.0884 13.4941" rotation="-26.2256 -75.5651 1.56532e-06" nodeId="839" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
+        <Camera name="Camera" translation="-15.8104 7.46862 -7.21814" rotation="-40.6657 -88.1592 6.32607e-05" nodeId="839" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
       </TransformGroup>
   </Scene>
 
