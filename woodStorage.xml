@@ -5,7 +5,7 @@
         <functions>
             <function>$l10n_function_woodStorage</function>
         </functions>
-        <image>store/woodStorage.dds</image>
+        <image>store/store_woodStorage.dds</image>
         <price>50000</price>
         <lifetime>1000</lifetime>
         <dailyUpkeep>50</dailyUpkeep>

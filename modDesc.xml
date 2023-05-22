@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="74">
     <author>Achimobil</author>
-    <version>1.1.0.0</version>
+    <version>1.1.0.1</version>
     
     <title>
         <de>Großes Holzlager</de>
@@ -20,7 +20,11 @@ Preis: 50.000 €
 Unterhalt: 50 € / Tag
 Kapazität 6.000.000L
 
-Changelog 1.1.0.0
+Changelog 
+1.1.0.1
+- Bilder für Mod, Store und Marke umbenannt
+
+1.1.0.0
 - Holzlänge kann von 6 bis 12m beim auslagern gewählt werden.
 - Der alte Bagger wurde verschrottet und die restliche Deko verschoben um mehr Platz für manuelles verladen zu haben
 - Kapazität auf 6 Mio erhöht um im vergleich zu anderen Lagern der Größe gerecht zu werden
@@ -37,7 +41,11 @@ Price: 50.000 $
 Daily maintenance: 50 $ / day
 Capacity 6.000.000L
 
-Changelog 1.1.0.0
+Changelog
+1.1.0.1
+- Rename images for Mod, store and brand
+
+1.1.0.0
 - Timber length can be selected from 6 to 12m when spawning
 - The old excavator was scrapped and the remaining deco moved to have more space for manual loading
 - Capacity increased to 6 million to match the size of other warehouses
@@ -46,14 +54,14 @@ Changelog 1.1.0.0
     
     <multiplayer supported="true"/>
     
-    <iconFilename>icon.dds</iconFilename>
+    <iconFilename>icon_BigWoodStorage.dds</iconFilename>
     
     <storeItems>
         <storeItem xmlFilename="woodStorage.xml"/>
     </storeItems>
     
     <brands>
-        <brand name="FARMERTOOLS" title="Farmer Tools" image="store/FarmerTools.dds"/>
+        <brand name="FARMERTOOLS" title="Farmer Tools" image="store/brand_FarmerTools.dds"/>
     </brands>
     
     <dependencies>
