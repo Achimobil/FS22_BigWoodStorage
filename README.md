@@ -1,5 +1,8 @@
 # FS22_BigWoodStorage
 
+#ModHub
+https://farming-simulator.com/mod.php?mod_id=255117
+
 # General
 ## DE
 Alles in meinen Mods darf weder komplett noch in Teilen in eigene Mods kopiert oder in irgendeiner anderen Form weiterveröffentlicht werden, es sei denn es wird ausdrücklich erlaubt.
